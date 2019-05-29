@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Title = "Login_v5";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login V17</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+
+    <link href="~/css/main.css" rel="stylesheet" />
+    <link href="~/css/util.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/css/icon-font.min.css" rel="stylesheet" />
+    <link href="~/css/animate.css" rel="stylesheet" />
+    <link href="~/css/animsition.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/hamburgers.css" rel="stylesheet" />
+    <link href="~/css/daterangepicker.css" rel="stylesheet" />
+    <link href="~/css/perfect-scrollbar.css" rel="stylesheet" />
+    <link href="~/css/select2.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <form class="login100-form validate-form">
+                    <span class="login100-form-title p-b-34">
+                        CONTA DE ACESSO 
+                    </span>
+
+                    <div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20" data-validate="Type user name">
+                        <input id="first-name" class="input100" type="text" name="username" placeholder="Nome de Usuario">
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div class="wrap-input100 rs2-wrap-input100 validate-input m-b-20" data-validate="Type password">
+                        <input class="input100" type="password" name="pass" placeholder="Senha">
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="container-login100-form-btn">
+                        <button class="login100-form-btn">
+                            Efetuar Login
+                        </button>
+                    </div>
+
+                    <div class="w-full text-center p-t-27 p-b-239">
+                        <span class="txt1">
+                            NÃO LEMBRO MEU ACESSO ?
+                        </span>
+
+                        <a href="#" class="txt2">
+                            RECUPERAR
+                        </a>
+                    </div>
+
+                    <div class="w-full text-center">
+                        <a href="#" class="txt3">
+                            Sign Up
+                        </a>
+                    </div>
+                </form>
+
+                <div class="login100-more" style="background-image: url('../../../img/3.jpg');"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="dropDownSelect1"></div>
+
+    <script type="text/javascript" src="~/js/Login_v5.js"></script>
+    <script type="text/javascript" src="~/js/select2.js"></script>
+    <script type="text/javascript" src="~/js/daterangepicker.js"></script>
+    <script type="text/javascript" src="~/js/moment.js"></script>
+    <script type="text/javascript" src="~/js/bootstrap.js"></script>
+    <script type="text/javascript" src="~/js/popper.js"></script>
+    <script type="text/javascript" src="~/js/tooltip.js"></script>
+    <script type="text/javascript" src="~/js/countdowntime.js"></script>
+    
+    <script>
+        $(".selection-2").select2({
+            minimumResultsForSearch: 20,
+            dropdownParent: $('#dropDownSelect1')
+        });
+    </script>
+ 
+</body>
+</html>

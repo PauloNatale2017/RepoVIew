@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = null;
+}
+
+
+@{
+    var ParametroLoginView = 5;
+}
+
+
+@switch (ParametroLoginView)
+{
+    case 1:
+        <div class="row">
+            @Html.Partial("~/Views/SharedLayers/Login_v1/Login_v1.cshtml");
+        </div>
+        break;
+    case 2:
+        <div class="row">
+            @Html.Partial("~/Views/SharedLayers/Login_v2/Login_v2.cshtml");
+        </div>
+        break;
+    case 3:
+        <div class="row">
+            @Html.Partial("~/Views/SharedLayers/Login_v3/Login_v3.cshtml");
+        </div>
+        break;
+    case 4:
+        <div class="row">
+            @Html.Partial("~/Views/SharedLayers/Login_v4/Login_v4.cshtml");
+        </div>
+        break;
+    case 5:
+        <div class="row">
+            @Html.Partial("~/Views/SharedLayers/Login_v5/Login_v5.cshtml");
+        </div>
+        break;
+    case 6:
+        <div class="row">
+            @Html.Partial("~/Views/SharedLayers/Login_v6/Login_v6.cshtml");
+        </div>
+        break;
+
+    default:
+        break;
+}
+
+
+
+
+
+@*<div class="row">
+   @Html.Partial("~/views/sharedlayers/login_v6/login_v6.cshtml");  
+</div>*@
+
+@*<div class="row">
+    @Html.Partial("~/Views/SharedLayers/Login_v4/Login_v4.cshtml");
+</div>*@
+
+@*<div class="row">
+    @Html.Partial("~/Views/SharedLayers/Login_v3/Login_v3.cshtml");
+</div>*@
+
+@*<div class="row">
+    @Html.Partial("~/Views/SharedLayers/Login_v2/Login_v2.cshtml");
+</div>*@
+
+@*<div class="row">
+        @Html.Partial("~/Views/SharedLayers/Login_v1/Login_v1.cshtml");
+    </div>*@
