@@ -21,16 +21,15 @@
     <link href="~/css/daterangepicker.css" rel="stylesheet" />
     <link href="~/css/perfect-scrollbar.css" rel="stylesheet" />
     <link href="~/css/select2.css" rel="stylesheet" />
-
 </head>
-<body>
 
+<body ng-controller="CtrlLogin_v5">
     <div class="limiter">
         <div class="container-login100">
             <div class="wrap-login100">
                 <form class="login100-form validate-form">
                     <span class="login100-form-title p-b-34">
-                        CONTA DE ACESSO 
+                        CONTA DE ACESSO
                     </span>
 
                     <div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20" data-validate="Type user name">
@@ -38,12 +37,12 @@
                         <span class="focus-input100"></span>
                     </div>
                     <div class="wrap-input100 rs2-wrap-input100 validate-input m-b-20" data-validate="Type password">
-                        <input class="input100" type="password" name="pass" placeholder="Senha">
+                        <input id="input100" class="input100" type="password" name="pass" placeholder="Senha">
                         <span class="focus-input100"></span>
                     </div>
 
                     <div class="container-login100-form-btn">
-                        <button class="login100-form-btn">
+                        <button onclick="Submmit()" class="login100-form-btn">
                             Efetuar Login
                         </button>
                     </div>
@@ -69,9 +68,8 @@
             </div>
         </div>
     </div>
-    
-    <div id="dropDownSelect1"></div>
 
+    <div id="dropDownSelect1"></div>
     <script type="text/javascript" src="~/js/Login_v5.js"></script>
     <script type="text/javascript" src="~/js/select2.js"></script>
     <script type="text/javascript" src="~/js/daterangepicker.js"></script>
@@ -80,13 +78,13 @@
     <script type="text/javascript" src="~/js/popper.js"></script>
     <script type="text/javascript" src="~/js/tooltip.js"></script>
     <script type="text/javascript" src="~/js/countdowntime.js"></script>
-    
+
     <script>
         $(".selection-2").select2({
             minimumResultsForSearch: 20,
             dropdownParent: $('#dropDownSelect1')
         });
     </script>
- 
+
 </body>
 </html>
