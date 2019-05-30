@@ -27,28 +27,34 @@ namespace DINAMICVIEW.WEB
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
 
-            bundles.Add(new StyleBundle("~/css").Include(
-                     "~/Views/SharedLayers/Context/main.css",
-                     "~/Views/SharedLayers/Context/util.css",
-                     "~/Views/SharedLayers/Context/font-awesome.min.css",
-                     "~/Views/SharedLayers/Context/icon-font.min.css",
-                     "~/Views/SharedLayers/Context/animate.css",
-                     "~/Views/SharedLayers/Context/animsition.css",
-                     "~/Views/SharedLayers/Context/bootstrap.min.css",
-                     "~/Views/SharedLayers/Context/hamburgers.css",
-                     "~/Views/SharedLayers/Context/daterangepicker.css",
-                     "~/Views/SharedLayers/Context/perfect-scrollbar.css",
-                     "~/Views/SharedLayers/Context/select2.css"));
+            bundles.Add(new StyleBundle("~/css/css").Include(
+                                        "~/css/main.css",
+                                        "~/css/util.css",
+                                        "~/css/font-awesome.min.css",
+                                        "~/css/icon-font.min.css",
+                                        "~/css/animate.css",
+                                        "~/css/animsition.css",
+                                        "~/css/bootstrap.min.css",
+                                        "~/css/hamburgers.css",
+                                        "~/css/daterangepicker.css",
+                                        "~/css/perfect-scrollbar.css",
+                                        "~/css/angular-block-ui.css",
+                                        "~/css/ui-grid.css",
+                                        "~/css/select2.css"));
 
-            bundles.Add(new ScriptBundle("~/js").Include(
-                      "~/Views/SharedLayers/Context/main.js",
-                      "~/Views/SharedLayers/Context/select2.js",
-                      "~/Views/SharedLayers/Context/daterangepicker.js",
-                      "~/Views/SharedLayers/Context/moment.js",
-                      "~/Views/SharedLayers/Context/bootstrap.js",
-                      "~/Views/SharedLayers/Context/popper.js",
-                      "~/Views/SharedLayers/Context/tooltip.js",
-                      "~/Views/SharedLayers/Context/countdowntime.js"));
+            bundles.Add(new ScriptBundle("~/js/js").Include(
+                                         "~/js/jquery-1.10.2.js",
+                                         "~/js/angular.js",
+                                         "~/js/angular-block-ui.js",
+                                         "~/js/ui-grid.js",
+                                         "~/js/select2.js",
+                                         "~/js/daterangepicker.js",
+                                         "~/js/moment.js",
+                                         "~/js/bootstrap.js",
+                                         "~/js/popper.js",
+                                         "~/js/tooltip.js",
+                                         "~/js/countdowntime.js",
+                                         "~/js/Login_v5.js"));
 
         }
     }

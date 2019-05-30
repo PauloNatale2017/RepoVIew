@@ -231,6 +231,12 @@
     <Content Include="Content\ui-bootstrap-csp.css" />
     <Content Include="Content\ui-grid.css" />
     <Content Include="Content\ui-grid.min.css" />
+    <Content Include="css\angular-block-ui.css" />
+    <Content Include="css\angular-block-ui.min.css" />
+    <Content Include="css\Site.css" />
+    <Content Include="css\ui-bootstrap-csp.css" />
+    <Content Include="css\ui-grid.css" />
+    <Content Include="css\ui-grid.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
